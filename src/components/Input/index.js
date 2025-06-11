@@ -1,12 +1,11 @@
-import Button from "../Button";
 import { InputContainer } from "./styles";
 
-const Input = () => {
+const Input = ({value}) => {
   return (
     <InputContainer>
-        <input type="text" placeholder="Digite algo..." />            
+      <input disabled value={value} /> 
     </InputContainer>
   );
-}
+};
 
 export default Input;
